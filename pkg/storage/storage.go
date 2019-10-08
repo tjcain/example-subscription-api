@@ -10,8 +10,8 @@ type SubscriptionStore interface {
 	DeleteSubscription(int) error
 }
 
-// PlanStore is an interface representing the ability to handle plans.
-type PlanStore interface {
+// ProductStore is an interface representing the ability to handle plans.
+type ProductStore interface {
 	AddProduct(adding.Product) (int, error)
 	UpdateProduct(Product) error
 	DeleteProduct(int) error
@@ -20,7 +20,7 @@ type PlanStore interface {
 // Store is the interface to the backing store.
 type Store interface {
 	SubscriptionStore
-	PlanStore
+	ProductStore
 
 	// Migrate migrates the database.
 	Migrate()

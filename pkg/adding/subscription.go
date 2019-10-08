@@ -12,7 +12,7 @@ func (s *service) AddSubscription(subs ...Subscription) error {
 	// validation ....
 
 	for _, subscription := range subs {
-		err := s.r.AddSubscription(subscription)
+		_, err := s.r.AddSubscription(subscription)
 		if err != nil {
 			return err // or error validation
 		}
