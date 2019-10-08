@@ -7,7 +7,7 @@ type Product struct {
 	// ...
 }
 
-// AddProduct adds given subscriptions to the database.
+// AddProduct adds given products to the database.
 func (s *service) AddProduct(prods ...Product) error {
 	// validation ....
 

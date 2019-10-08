@@ -39,7 +39,7 @@ func addSubscription(s adding.Service) http.HandlerFunc {
 	}
 }
 
-// addProduct returns a handler for POST /subscription requests.
+// addProduct returns a handler for POST /product requests.
 func addProduct(s adding.Service) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		decoder := json.NewDecoder(r.Body)
